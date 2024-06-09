@@ -23,20 +23,21 @@
             "assets": [
               {
                 "glob": "**/*",
-                "input": "public"
+                "input": "public",
               }
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+ "node_modules/bootstrap/dist/css/bootstrap.min.css"
             ],
-            "scripts": []
+            "scripts": ["node_modules/bootstrap/dist/js/bootstrap.min.js", "src/js/scripts.js"]
           },
           "configurations": {
             "production": {
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "500kB",
+                  "maximumWarning": "800kB",
                   "maximumError": "1MB"
                 },
                 {
@@ -92,5 +93,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "a72034f7-c699-43e9-9c1c-c5063e212ef3"
   }
 }
